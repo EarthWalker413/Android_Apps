@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/firstStateAssetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/first_state_asset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@android:drawable/presence_video_busy" />
+
+        <TextView
+            android:id="@+id/firstStateProduceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/first_state_asset"
+            android:text="@string/state_asset_produce"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/firstStateTimeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstStateProduceView"
+            android:layout_toEndOf="@id/first_state_asset"
+            android:text="@string/state_asset_time" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/firstStateAddButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstStateAssetLayout"
+        android:layout_marginTop="0dp"
+        android:text="@string/buyAssetButton" />
+
+    <RelativeLayout
+        android:id="@+id/secondStateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstStateAddButton"
+        android:layout_marginTop="0dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/second_state_asset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@android:drawable/presence_video_online" />
+
+        <TextView
+            android:id="@+id/secondStateProduceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/second_state_asset"
+            android:text="@string/state_asset_produce"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/secondStateTimeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondStateProduceView"
+            android:layout_toEndOf="@id/second_state_asset"
+            android:text="@string/state_asset_time" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/secondStateAddButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondStateLayout"
+        android:layout_marginTop="0dp"
+        android:text="@string/buyAssetButton" />
+
+    <RelativeLayout
+        android:id="@+id/thirdStateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondStateAddButton"
+        android:layout_marginTop="0dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/third_State"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@android:drawable/presence_video_away" />
+
+        <TextView
+            android:id="@+id/thirdStateProduceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/third_State"
+            android:text="@string/state_asset_produce"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/thirdStateTimeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thirdStateProduceView"
+            android:layout_toEndOf="@id/third_State"
+            android:text="@string/state_asset_time" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/thirdStateAddButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thirdStateLayout"
+        android:layout_marginTop="0dp"
+        android:text="@string/buyAssetButton" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CookieClockier</string>
+    <string name="game_name">ClICK MADER</string>
+    <string name="number_of_cookies">produced: %1$d</string>
+    <string name="change_cursor">CHANGE CURSOR</string>
+    <string name="newrandomAsset">Random</string>
+    <string name="newstateAsset">State</string>
+    <string name="state_asset_time">Time: %1$d</string>
+    <string name="state_asset_produce">produce: %1$d</string>
+    <string name="buyAssetButton">BUY: %1$d cookies</string>
+</resources>
